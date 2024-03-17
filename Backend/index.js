@@ -6,11 +6,11 @@ const port = 3000;
 require('dotenv').config();
 
 app.use(cors(
-  {
-    origin:["https://local-link-gistathon.vercel.app/"],
-    methods:["POST","GET","PUT"],
-    credentials:true
-  }
+  // {
+  //   origin:["https://local-link-gistathon.vercel.app/"],
+  //   methods:["POST","GET","PUT"],
+  //   credentials:true
+  // }
 ));
 app.use(express.json())
 
