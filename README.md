@@ -2,6 +2,10 @@
 
 Local-Link is a platform designed to connect individuals with local service providers such as electricians, plumbers, gardeners, and more. Our project was developed during a hackathon where we aimed to address the challenge of facilitating efficient communication and access to essential services within local communities.
 
+## Deployed Link
+
+https://local-link-gistathon.vercel.app
+
 ## Problem Statement
 
 In today's fast-paced world, finding reliable local service providers can be a daunting task. Whether you're facing a plumbing emergency, need electrical repairs, or simply require assistance with household maintenance, the process of finding a trustworthy professional can be time-consuming and frustrating. Traditional methods of searching through directories or relying on word-of-mouth recommendations are often inefficient and unreliable.
