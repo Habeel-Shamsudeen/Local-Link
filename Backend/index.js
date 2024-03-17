@@ -16,6 +16,6 @@ app.use(express.json())
 
 app.use("/api/v1", rootRouter);
 
-// app.listen(port, () => {
-//   console.log(`connected to port ${port}`);
-// });
+app.listen(port, () => {
+  console.log(`connected to port ${port}`);
+});
