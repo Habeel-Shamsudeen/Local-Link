@@ -38,7 +38,7 @@ While Local-Link was developed as a prototype during the hackathon, we envision 
   
 - **Community Engagement:** Building a strong community around Local-Link through forums, blog content, and social media engagement will be crucial for fostering trust and engagement among users and service providers alike.
 
-*Local-Link Team*
-Jacob Jomy
-Habeel Shamsudeen
+#### Local-Link Team
+- Jacob Jomy
+- Habeel Shamsudeen
 
