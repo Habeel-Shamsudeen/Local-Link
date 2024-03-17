@@ -21,7 +21,7 @@ export function Signup() {
     async function getMyData() {
       try {
         const response = await axios.get(
-          "http://localhost:3000/api/v1/user/me",
+          "https://local-link-gistathon-api.vercel.app/api/v1/user/me",
           {
             headers: {
               Authorization: "Bearer " + localStorage.getItem("token"),
@@ -113,7 +113,7 @@ export function Signup() {
               try {
                 console.log(mode)
                 const response = await axios.post(
-                  "http://localhost:3000/api/v1/user/signup",
+                  "https://local-link-gistathon-api.vercel.app/api/v1/user/signup",
                   {
                     email,
                     firstName,

@@ -58,7 +58,7 @@ export function PostJob() {
             onClick={async () => {
               try {
                 const response = await axios.post(
-                  "http://localhost:3000/api/v1/user/addworkpost",
+                  "https://local-link-gistathon-api.vercel.app/api/v1/user/addworkpost",
                   {
                     desc,
                     title,

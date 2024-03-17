@@ -11,7 +11,7 @@ export function EmployeeHome({ user }) {
     async function getMyData() {
       try {
         const response = await axios.get(
-          `http://localhost:3000/api/v1/user/workpost?filter=${filter}`
+          `https://local-link-gistathon-api.vercel.app/api/v1/user/workpost?filter=${filter}`
         );
         if (response.data) {
           setPosts(response.data.post);
