@@ -4,7 +4,7 @@ import "./App.css";
 import { Signin } from "./common/Signin";
 import { Signup } from "./common/Signup";
 import { Home } from "./common/Home";
-import { PostJob } from "./CustomerPages/PostJob";
+// import { PostJob } from "./CustomerPages/PostJob";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/signin" element={<Signin />} />
         <Route path="/home" element={<Home />} />
-        <Route path="postjob" element={<PostJob/>}/>
+        {/* <Route path="postjob" element={<PostJob/>}/> */}
       </Routes>
     </BrowserRouter>
     </ChakraProvider>
