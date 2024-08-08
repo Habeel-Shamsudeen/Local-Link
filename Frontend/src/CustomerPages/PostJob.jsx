@@ -5,6 +5,7 @@ import { InputBox } from "../components/InputBox";
 import { Button } from "../components/Button";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import { BACKEND_URL } from "../../../config";
 export function PostJob() {
   const [title, setTitle] = useState("");
   const [imgUrl, setImgUrl] = useState("");
@@ -58,7 +59,7 @@ export function PostJob() {
             onClick={async () => {
               try {
                 const response = await axios.post(
-                  "https://local-link-gistathon-api.vercel.app/api/v1/user/addworkpost",
+                  `${BACKEND_URL}/api/v1/user/addworkpost`,
                   {
                     desc,
                     title,

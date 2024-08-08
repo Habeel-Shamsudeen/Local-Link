@@ -7,6 +7,7 @@ import { BottomWarning } from "../components/BottomWarning";
 import { useNavigate } from "react-router-dom";
 import SelectButton from "../components/SelectButton";
 import axios from "axios";
+import { BACKEND_URL } from "../../../config";
 export function Signup() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -21,7 +22,7 @@ export function Signup() {
     async function getMyData() {
       try {
         const response = await axios.get(
-          "https://local-link-gistathon-api.vercel.app/api/v1/user/me",
+          `${BACKEND_URL}/api/v1/user/me`,
           {
             headers: {
               Authorization: "Bearer " + localStorage.getItem("token"),

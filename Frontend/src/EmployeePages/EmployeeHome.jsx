@@ -3,6 +3,7 @@ import { AppBar } from "../components/AppBar";
 import { PostCard } from "../components/PostCard";
 import { ProfileComponent } from "../components/ProfileComponent";
 import axios from "axios";
+import { BACKEND_URL } from "../../../config";
 
 export function EmployeeHome({ user }) {
     const [filter,setFilter] = useState('')
@@ -11,7 +12,7 @@ export function EmployeeHome({ user }) {
     async function getMyData() {
       try {
         const response = await axios.get(
-          `https://local-link-gistathon-api.vercel.app/api/v1/user/workpost?filter=${filter}`
+          `${BACKEND_URL}/api/v1/user/workpost?filter=${filter}`
         );
         if (response.data) {
           setPosts(response.data.post);

@@ -3,6 +3,7 @@ import { EmployeeHome } from "../EmployeePages/EmployeeHome";
 import { CustomerHome } from "../CustomerPages/CustomerHome";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { BACKEND_URL } from "../../../config";
 
 export function Home() {
   const [isLoading, setIsLoading] = useState(true); // Track loading state
@@ -14,7 +15,7 @@ export function Home() {
     async function getMyData() {
       try {
         const response = await axios.get(
-          "https://local-link-gistathon-api.vercel.app/api/v1/user/me",
+          `${BACKEND_URL}/api/v1/user/me`,
           {
             headers: {
               Authorization: "Bearer " + localStorage.getItem("token"),
