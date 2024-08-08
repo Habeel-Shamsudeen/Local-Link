@@ -115,7 +115,7 @@ export function Signup() {
               try {
                 console.log(mode)
                 const response = await axios.post(
-                  "https://local-link-gistathon-api.vercel.app/api/v1/user/signup",
+                  `${BACKEND_URL}/api/v1/user/signup`,
                   {
                     email,
                     firstName,
