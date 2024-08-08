@@ -1,0 +1,1 @@
+export const BACKEND_URL='local-link-lmim.vercel.app';
