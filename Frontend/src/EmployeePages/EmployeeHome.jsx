@@ -3,7 +3,7 @@ import { AppBar } from "../components/AppBar";
 import { PostCard } from "../components/PostCard";
 import { ProfileComponent } from "../components/ProfileComponent";
 import axios from "axios";
-import { BACKEND_URL } from "../../../config";
+import { BACKEND_URL } from "../../config";
 
 export function EmployeeHome({ user }) {
     const [filter,setFilter] = useState('')

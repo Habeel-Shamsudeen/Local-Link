@@ -6,7 +6,7 @@ import { InputBox } from "../components/InputBox";
 import { SubHeading } from "../components/SubHeading";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import { BACKEND_URL } from "../../../config";
+import { BACKEND_URL } from "../../config";
 
 export function Signin() {
   const [password, setPassword] = useState("");

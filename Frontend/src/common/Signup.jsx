@@ -7,7 +7,8 @@ import { BottomWarning } from "../components/BottomWarning";
 import { useNavigate } from "react-router-dom";
 import SelectButton from "../components/SelectButton";
 import axios from "axios";
-import { BACKEND_URL } from "../../../config";
+import { BACKEND_URL } from "../../config";
+
 export function Signup() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
